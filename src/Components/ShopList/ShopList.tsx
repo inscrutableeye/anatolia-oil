@@ -1,4 +1,4 @@
-import { Box, Flex, SimpleGrid, Image, Text, Button } from '@chakra-ui/react';
+import { Box, Flex, SimpleGrid, Image, Text, Button, transition } from '@chakra-ui/react';
 import React from 'react';
 
 
@@ -54,10 +54,11 @@ const ShopList:React.FC = () => {
                 
                         <Box key={index}  display={"flex"} flexDirection="column" alignItems={"center"} justifyContent="center" _hover={{
                             zindex:"1",
-                            boxShadow:"-1px 5px 24px -8px rgba(0,0,0,0.75)"
+                            boxShadow:"-1px 5px 24px -8px rgba(0,0,0,0.75)",
+                            transition:".8s"
                         }}>
 <Image bg={"transparent"} src={val.image.toString()} w="400" h="400"/>
-<Flex direction={"column"} align="center" justify={"center"} mt="-10%" mb={"20px"}>
+<Flex direction={"column"} align="center" justify={"center"} mt="-10%" mb={"20px"} >
 <Text fontSize={"26px"} color="green" fontWeight={300} lineHeight="1.46">
 {val.name}
 </Text>

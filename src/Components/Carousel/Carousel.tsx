@@ -36,7 +36,7 @@ export default function CaptionCarousel() {
 
   const [slider, setSlider] = useState<Slider | null>(null)
   const router = useRouter()
-  const top = useBreakpointValue({ base: '90%', md: '65%' });
+  const top = useBreakpointValue({ base: '90%', md: '35%' });
   const side = useBreakpointValue({ base: '30%', md: '40px' });
  
   const cards: Array<{
@@ -45,7 +45,7 @@ export default function CaptionCarousel() {
     {
  
       image:
-        'olive_slider.svg',
+        'oliveee23.jpg',
     }, {
  
         image:

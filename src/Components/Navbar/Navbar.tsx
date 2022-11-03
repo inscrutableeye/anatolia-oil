@@ -57,7 +57,7 @@ const Navbar:React.FC<NavbarProps> = () => {
             >
 <Image src='logo.jpg' w={"188.25px"} />
 <Stack direction={"row"} spacing="10" mr={-120} transform="translateX(600px)">
-            <Icon as={FaSearch}  style={{width:"30px", height:"30px", color:"black"}} />
+            <Icon as={FaSearch}  style={{width:"30px", height:"30px", color:"#44533c"}} />
        <RightContent user={user}/>
   <ShoppingCart/> 
       
@@ -68,14 +68,16 @@ const Navbar:React.FC<NavbarProps> = () => {
             HeaderLink.map((val,index)=> {
                 return(
                     <LinkBox key={index}>
-                    <LinkOverlay textDecoration={"none"} color={"black"}    _hover={{
+                    <LinkOverlay textDecoration={"none"} color={"#44533c"}    _hover={{
                         color:"#93aa52"
                     }} href={val.link.toString()} > 
                     
                     <Text
-                    fontStyle="normal"
+                    fontFamily={"Our Serif Light"}
+                
                     fontSize={"20px"}
                     pr="20"
+                    fontWeight={"600"}
                  
                     >
                         {val.name}

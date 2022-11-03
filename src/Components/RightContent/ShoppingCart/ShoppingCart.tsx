@@ -32,7 +32,7 @@ export default function ShoppingCart() {
   
     return (
       <>
-            <Icon as={FaShoppingCart} style={{width:"30px", height:"30px", color:"black"}} onClick={() => setDrawerState({ open: true, view: 'isOpen' })}  />
+            <Icon as={FaShoppingCart} style={{width:"30px", height:"30px", color:"#44533c"}} onClick={() => setDrawerState({ open: true, view: 'isOpen' })}  />
         <Drawer
           isOpen={drawerState.open}
           placement='right'

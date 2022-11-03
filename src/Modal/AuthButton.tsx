@@ -10,7 +10,7 @@ const AuthButton: React.FC = () => {
   const setAuthModalState = useSetRecoilState(authModalState)
   return (
     <> 
-     <Icon  as={FaUser} w="30px" h={"30px"} color="black"   onClick={() => setAuthModalState({ open: true, view: 'login' })}   />
+     <Icon  as={FaUser} w="30px" h={"30px"} color="#44533c"   onClick={() => setAuthModalState({ open: true, view: 'login' })}   />
      
     </>
   )
